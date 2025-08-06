@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PTFMS Login</title>
+</head>
+<body>
+    <h1>Public Transit Fleet Management System</h1>
+    <h2>Login</h2>
+    <form action="login" method="post">
+        <input type="hidden" name="action" value="login">
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+    <h2>Register</h2>
+    <form action="login" method="post">
+        <input type="hidden" name="action" value="register">
+        Name: <input type="text" name="name" required><br>
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password" required><br>
+        User Type: <select name="user_type">
+            <option value="Manager">Manager</option>
+            <option value="Operator">Operator</option>
+        </select><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
