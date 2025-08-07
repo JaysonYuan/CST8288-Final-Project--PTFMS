@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 /**
  * DAO for Vehicle operations, handling CRUD operations for vehicles in the PTFMS.
- * @author Group1
+ * @author Zhongkai Li
  */
 public class VehicleDAO {
     /**
