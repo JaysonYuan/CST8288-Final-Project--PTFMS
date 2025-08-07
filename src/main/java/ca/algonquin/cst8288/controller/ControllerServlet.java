@@ -12,7 +12,6 @@ import java.io.IOException;
  * ControllerServlet manages communication between layers.
  * @author Group1
  */
-@WebServlet("/controller")
 public class ControllerServlet extends HttpServlet {
     private UserDAO userDAO;
     private VehicleDAO vehicleDAO;

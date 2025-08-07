@@ -11,7 +11,7 @@ import java.io.IOException;
  * Displays dashboard data.
  * @author Group1
  */
-@WebServlet("/dashboard")
+
 public class DashboardServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

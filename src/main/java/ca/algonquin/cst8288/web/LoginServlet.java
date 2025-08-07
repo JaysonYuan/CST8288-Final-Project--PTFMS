@@ -17,12 +17,11 @@ import javax.servlet.http.HttpSession;
  * Servlet handling user login for the CST8288 Final Project.
  * @author Group20
  */
-@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final String DB_URL = "jdbc:mysql://localhost:3306/ptfms_db?useSSL=false";
-    private static final String DB_USER = "cst8288";
-    private static final String DB_PASSWORD = "cst8288";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "123456";
 
     @Override
     public void init() throws ServletException {
