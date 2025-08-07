@@ -10,7 +10,7 @@ import java.io.IOException;
 
 /**
  * ControllerServlet manages communication between layers.
- * @author Group1
+ * @author Group20
  */
 public class ControllerServlet extends HttpServlet {
     private UserDAO userDAO;
