@@ -2,7 +2,7 @@ package ca.algonquin.cst8288.model;
 
 /**
  * Represents a User entity in the PTFMS.
- * @author Group1
+ * @author Jiaxiang Yuan
  */
 public class User {
     private int userId;
