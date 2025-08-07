@@ -13,7 +13,7 @@ import java.sql.SQLException;
 
 /**
  * Handles vehicle management operations.
- * @author Group1
+ * @author Jiaxiang Yuan Zhongkai Li
  */
 public class VehicleManagementServlet extends HttpServlet {
     private VehicleDAO vehicleDAO;
