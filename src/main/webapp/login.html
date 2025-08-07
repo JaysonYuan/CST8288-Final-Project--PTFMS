@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PTFMS Login</title>
+    <title>PTFMS - Login</title>
+    <script>
+        window.onload = function () {
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+
+            const params = new URLSearchParams(window.location.search);
+            if (params.get("msg") === "registered") {
+                alert("Registration successful! Please log in.");
+            }
+        };
+    </script>
 </head>
 <body>
     <h1>Public Transit Fleet Management System</h1>
     <h2>Login</h2>
-    <form action="vehicle" method="post">
-        <input type="hidden" name="action" value="login">
-        Email: <input type="email" name="email" required><br>
-        Password: <input type="password" name="password" required><br>
+    <form action="login" method="post">
+        Email: <input type="email" name="email" id="email" required><br>
+        Password: <input type="password" name="password" id="password" required><br><br>
         <input type="submit" value="Login">
     </form>
-    <h2>Register</h2>
-    <form action="login" method="post">
-        <input type="hidden" name="action" value="register">
-        Name: <input type="text" name="name" required><br>
-        Email: <input type="email" name="email" required><br>
-        Password: <input type="password" name="password" required><br>
-        User Type: <select name="user_type">
-            <option value="Manager">Manager</option>
-            <option value="Operator">Operator</option>
-        </select><br>
-        <input type="submit" value="Register">
-    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
 </body>
 </html>

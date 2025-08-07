@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PTFMS - Register</title>
+    <script>
+        window.onload = function () {
+      
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+
+     
+            const params = new URLSearchParams(window.location.search);
+            const error = params.get("error");
+
+            if (error) {
+                switch (error) {
+                    case "emailExists":
+                        alert("This email is already registered.");
+                        break;
+                    case "empty":
+                        alert("All fields are required.");
+                        break;
+                    case "failed":
+                        alert("Registration failed. Please try again.");
+                        break;
+                    case "database":
+                        alert("A database error occurred. Please contact support.");
+                        break;
+                }
+
+  
+                history.replaceState(null, "", window.location.pathname);
+            }
+        };
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, select {
+            margin: 6px 0;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Public Transit Fleet Management System</h1>
+    <h2>Register</h2>
+
+    <form action="register" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" required><br>
+
+        <label for="user_type">User Type:</label><br>
+        <select name="user_type" id="user_type" required>
+            <option value="Manager">Manager</option>
+            <option value="Operator">Operator</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+</body>
+</html>
