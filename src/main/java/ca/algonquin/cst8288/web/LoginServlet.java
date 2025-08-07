@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * Servlet handling user login for the CST8288 Final Project.
- * @author Group20
+ * @author Jiaxiang Yuan Zhongkai Li
  */
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
