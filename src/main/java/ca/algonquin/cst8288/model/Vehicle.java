@@ -2,7 +2,11 @@ package ca.algonquin.cst8288.model;
 
 /**
  * Represents a Vehicle entity.
+<<<<<<< HEAD
  * @author Group1
+=======
+ * @author Group20
+>>>>>>> 7178af1 (Add initial NetBeans project files)
  */
 public class Vehicle {
     private String vehicleNumber;

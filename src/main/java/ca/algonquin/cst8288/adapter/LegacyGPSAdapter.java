@@ -2,7 +2,11 @@ package ca.algonquin.cst8288.adapter;
 
 /**
  * Adapter for legacy GPS system.
+<<<<<<< HEAD
  * @author Group1
+=======
+ * @author Group20
+>>>>>>> 7178af1 (Add initial NetBeans project files)
  */
 public class LegacyGPSAdapter {
     private LegacyGPS legacyGPS;

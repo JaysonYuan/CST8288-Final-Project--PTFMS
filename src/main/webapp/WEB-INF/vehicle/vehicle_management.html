@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Management</title>
+</head>
+<body>
+    <h1>Vehicle Management</h1>
+    <form action="vehicle" method="post">
+        <input type="hidden" name="action" value="addVehicle">
+        Vehicle Number: <input type="text" name="vehicle_number" required><br>
+        Type: <select name="type">
+            <option value="Diesel Bus">Diesel Bus</option>
+            <option value="Electric Light Rail">Electric Light Rail</option>
+            <option value="Diesel-Electric Train">Diesel-Electric Train</option>
+        </select><br>
+        Fuel/Energy Type: <input type="text" name="fuel_energy_type" required><br>
+        Consumption Rate: <input type="number" step="0.01" name="consumption_rate" required><br>
+        Max Passengers: <input type="number" name="max_passengers" required><br>
+        Route ID: <input type="number" name="current_route_id" required><br>
+        <input type="submit" value="Add Vehicle">
+    </form>
+    <a href="controller?action=dashboard">Back to Dashboard</a>
+</body>
+</html>

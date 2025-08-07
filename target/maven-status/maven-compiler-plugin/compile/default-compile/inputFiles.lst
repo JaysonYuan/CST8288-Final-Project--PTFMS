@@ -1,0 +1,17 @@
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\adapter\LegacyGPSAdapter.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\controller\ControllerServlet.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\dao\DAOFactory.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\dao\UserDAO.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\dao\VehicleDAO.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\model\User.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\model\Vehicle.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\model\VehicleBuilder.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\service\ConsumptionStrategy.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\service\DieselConsumptionStrategy.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\service\ElectricConsumptionStrategy.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\service\MaintenanceCommand.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\service\MaintenanceObserver.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\service\VehicleSubject.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\web\DashboardServlet.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\web\LoginServlet.java
+C:\Netbean-24-apache\CST8288FinalProject\src\main\java\ca\algonquin\cst8288\web\VehicleManagementServlet.java

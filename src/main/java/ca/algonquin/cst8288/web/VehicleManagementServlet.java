@@ -1,10 +1,18 @@
 package ca.algonquin.cst8288.web;
 
+<<<<<<< HEAD
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+=======
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+>>>>>>> 7178af1 (Add initial NetBeans project files)
 import ca.algonquin.cst8288.dao.VehicleDAO;
 import ca.algonquin.cst8288.model.VehicleBuilder;
 import ca.algonquin.cst8288.model.Vehicle;
@@ -13,8 +21,14 @@ import java.sql.SQLException;
 
 /**
  * Handles vehicle management operations.
+<<<<<<< HEAD
  * @author Group1
  */
+=======
+ * @author Group20
+ */
+@WebServlet("/vehicle")
+>>>>>>> 7178af1 (Add initial NetBeans project files)
 public class VehicleManagementServlet extends HttpServlet {
     private VehicleDAO vehicleDAO;
 

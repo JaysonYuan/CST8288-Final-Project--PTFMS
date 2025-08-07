@@ -1,0 +1,7 @@
+ca\algonquin\cst8288\adapter\LegacyGPSAdapterTest.class
+ca\algonquin\cst8288\service\VehicleSubjectTest.class
+ca\algonquin\cst8288\model\VehicleBuilderTest.class
+ca\algonquin\cst8288\dao\DAOFactoryTest.class
+ca\algonquin\cst8288\service\ElectricConsumptionStrategyTest.class
+ca\algonquin\cst8288\service\VehicleSubjectTest$TestObserver.class
+ca\algonquin\cst8288\service\DieselConsumptionStrategyTest.class

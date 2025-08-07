@@ -5,7 +5,11 @@ import java.util.List;
 
 /**
  * Subject for maintenance notifications.
+<<<<<<< HEAD
  * @author Group1
+=======
+ * @author Group20
+>>>>>>> 7178af1 (Add initial NetBeans project files)
  */
 public class VehicleSubject {
     private List<MaintenanceObserver> observers = new ArrayList<>();

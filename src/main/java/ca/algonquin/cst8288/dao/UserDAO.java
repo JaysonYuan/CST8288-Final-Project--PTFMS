@@ -9,7 +9,11 @@ import java.util.logging.Logger;
 
 /**
  * DAO for User operations.
+<<<<<<< HEAD
  * @author Group1
+=======
+ * @author Group20
+>>>>>>> 7178af1 (Add initial NetBeans project files)
  */
 public class UserDAO {
     private Connection getConnection() throws SQLException {

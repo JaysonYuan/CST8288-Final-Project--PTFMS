@@ -1,5 +1,6 @@
 package ca.algonquin.cst8288.web;
 
+<<<<<<< HEAD
 import java.io.IOException;
 import java.sql.*;
 import javax.servlet.ServletException;
@@ -35,11 +36,35 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.sendRedirect("login.html");
+=======
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import ca.algonquin.cst8288.dao.UserDAO;
+import ca.algonquin.cst8288.model.User;
+import java.io.IOException;
+import java.sql.SQLException;
+
+/**
+ * Handles user login and registration.
+ * @author Group20
+ */
+@WebServlet("/login")
+public class LoginServlet extends HttpServlet {
+    private UserDAO userDAO;
+
+    @Override
+    public void init() throws ServletException {
+        userDAO = new UserDAO();
+>>>>>>> 7178af1 (Add initial NetBeans project files)
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+<<<<<<< HEAD
 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
@@ -91,3 +116,32 @@ public class LoginServlet extends HttpServlet {
         // Optional cleanup
     }
 }
+=======
+        String action = request.getParameter("action");
+        if ("register".equals(action)) {
+            User user = new User(0, request.getParameter("name"), request.getParameter("email"),
+                    request.getParameter("password"), request.getParameter("user_type"));
+            try {
+                userDAO.registerUser(user);
+                response.sendRedirect("login.html?success=registered");
+            } catch (SQLException e) {
+                response.sendRedirect("login.html?error=registration_failed");
+            }
+        } else if ("login".equals(action)) {
+            String email = request.getParameter("email");
+            String password = request.getParameter("password");
+            try {
+                User user = userDAO.authenticateUser(email, password);
+                if (user != null) {
+                    request.getSession().setAttribute("user", user);
+                    response.sendRedirect("controller?action=dashboard");
+                } else {
+                    response.sendRedirect("login.html?error=invalid_credentials");
+                }
+            } catch (SQLException e) {
+                response.sendRedirect("login.html?error=database_error");
+            }
+        }
+    }
+}
+>>>>>>> 7178af1 (Add initial NetBeans project files)
