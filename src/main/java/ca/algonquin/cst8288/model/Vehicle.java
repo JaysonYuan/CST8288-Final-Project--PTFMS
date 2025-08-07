@@ -2,7 +2,7 @@ package ca.algonquin.cst8288.model;
 
 /**
  * Represents a Vehicle entity.
- * @author Group1
+ * @author Jiaxiang Yuan
  */
 public class Vehicle {
     private String vehicleNumber;
