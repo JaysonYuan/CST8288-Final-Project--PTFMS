@@ -9,7 +9,7 @@ import java.io.IOException;
 
 /**
  * Displays dashboard data.
- * @author Group1
+ * @author Zhongkai Li Jiaxiang Yuan Jinze Li
  */
 
 public class DashboardServlet extends HttpServlet {
