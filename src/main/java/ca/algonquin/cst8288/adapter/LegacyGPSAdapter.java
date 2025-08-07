@@ -2,7 +2,7 @@ package ca.algonquin.cst8288.adapter;
 
 /**
  * Adapter for legacy GPS system.
- * @author Group1
+ * @author Group20
  */
 public class LegacyGPSAdapter {
     private LegacyGPS legacyGPS;
