@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  * DAO for User operations.
- * @author Group1
+ * @author Zhongkai Li
  */
 public class UserDAO {
     private Connection getConnection() throws SQLException {
