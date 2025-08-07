@@ -2,7 +2,7 @@ package ca.algonquin.cst8288.dao;
 
 /**
  * Simple Factory for DAO objects.
- * @author Group1
+ * @author Zhongkai Li
  */
 public class DAOFactory {
     private static DAOFactory instance = new DAOFactory();
